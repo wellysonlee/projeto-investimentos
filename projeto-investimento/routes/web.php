@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+/*Route::get('/', function () {
+    return view('welcome');         ------ MODELO DE ROTA --------
+});*/
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => '\App\Http\Controllers\Controller@homepage']);
+Route::get('/cadastro', ['uses' => '\App\Http\Controllers\Controller@cadastrar']);
+Route::get('/login', ['uses' => '\App\Http\Controllers\Controller@fazerLogin']);
+
