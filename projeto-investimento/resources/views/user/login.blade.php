@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 </head>
     <body>
+
+    <div class="background">
+        <img src="{{ asset('assets/images/investimento.jpg') }}" alt="Imagem de investimento e finanças">
+    </div>
         
         <section id="conteudo-view" class ="login">
 
