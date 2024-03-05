@@ -19,5 +19,11 @@ use App\Http\Controllers\Controller;
 
 Route::get('/', ['uses' => '\App\Http\Controllers\Controller@homepage']);
 Route::get('/cadastro', ['uses' => '\App\Http\Controllers\Controller@cadastrar']);
-Route::get('/login', ['uses' => '\App\Http\Controllers\Controller@fazerLogin']);
 
+
+/**
+ * Routes to user auth
+ * ------------------------------------------------------------------------
+ */
+Route::get('/login', ['uses' => '\App\Http\Controllers\Controller@fazerLogin']);
+Route::post('/login', ['as' => 'user.login', 'uses  ' => '\App\Http\Controllers\Controller@login']);
