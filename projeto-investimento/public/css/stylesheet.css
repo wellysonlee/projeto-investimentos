@@ -91,4 +91,6 @@ section#conteudo-view form input[type="submit"]{
     width: 60%;
     color: #f9f9f9;
     font: 1em, 'Fredoka One', cursive;
+    border: 2px  solid #52F90C;
+    
 }
