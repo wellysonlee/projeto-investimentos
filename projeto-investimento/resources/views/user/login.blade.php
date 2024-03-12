@@ -10,7 +10,7 @@
     <body>
 
     <div class="background">
-        <img src="{{ asset('assets/images/investimento.jpg') }}" alt="Imagem de investimento e finanças">
+        <img src="{{ asset('assets/images/fotocapa.jpg') }}" alt="Imagem de investimento e finanças">
     </div>
         
         <section id="conteudo-view" class ="login">

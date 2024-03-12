@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use \App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,5 @@ Route::get('/cadastro', ['uses' => '\App\Http\Controllers\Controller@cadastrar']
  * ------------------------------------------------------------------------
  */
 Route::get('/login', ['uses' => '\App\Http\Controllers\Controller@fazerLogin']);
-Route::post('/login', ['as' => 'user.login', 'uses  ' => '\App\Http\Controllers\Controller@login']);
+Route::post('/login', ['as' => 'user.login', 'uses' => '\App\Http\Controllers\DashboardController@auth']);
+Route::post('/dashboard', ['as' => 'user.dashboard', 'uses' => '\App\Http\Controllers\DashboardController@index']);
